@@ -1,0 +1,284 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+}
+a{
+	text-decoration: none;
+}
+.center{
+	width: 1140px;
+	margin: 0 auto;
+}
+span{
+	color: #F16D7F;
+}
+/* ========================== home ========================== */
+.home-page{
+	width: 100%;
+	background-color: #F1E4E6;
+}
+.home-page-wrp{
+	margin: 0 auto;
+	background-image: url('../img/man-header-bgr.png');
+	background-repeat: no-repeat;
+	background-position: -230px bottom;
+	height: 764px;
+}
+.header-wrp{
+	background-color: #222222;
+}
+.header{
+	height: 75px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+.header-logo{
+	width: 111px;
+	height: 38px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.search{
+	fill: #fff;
+}
+.header-menu{
+	display: flex;
+	list-style: none;
+	gap:33px;
+	align-items: center;	
+}
+.header-menu-list a{
+	fill: #fff;
+	list-style: none;
+}
+.home-page-wrp{
+	max-height:764px;
+}
+.the-brand-wrp{	
+	padding: 289px 101px 381px 634px;
+}
+.the-brand{
+	padding-left: 12px;
+	border-left: 12px solid #F16D7F;
+	text-transform: uppercase;
+	color: #222222;
+	width: 405px;
+}
+.the-brand-title{
+font-weight: 900;
+font-size: 48px;
+line-height: 58px;
+}
+.the-brand-subtitle{
+	font-weight: 700;
+font-size: 32px;
+line-height: 38px;
+}
+
+/* ============================= offer ========================== */
+
+.offer-wrp{
+	padding-top: 65px;
+	margin-bottom: 96px ;
+}
+.offer-content-cards{
+	display: grid;
+	grid-template-columns: repeat(3, 360px);
+	justify-content: left;
+	list-style: none;
+	gap: 30px;
+	color: #fff;
+}
+.offer-content-card-item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 360px;
+	height: 260px;	
+	font-weight: 400;
+	font-size: 16px;
+	text-align: center;
+	line-height: 19px;
+	text-transform: uppercase;	
+	background-color: rgba(33, 22, 22, 0.7);
+	background-blend-mode: darken;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.offer-content-card-item:hover{
+	background-blend-mode: overlay;
+}
+.offer-content-card-item h3{
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	color: #F16D7F;
+}
+.women{
+	background-image: url(../img/offer-whomen.png);
+}
+.men{
+	background-image: url(../img/offer-men.png);
+}
+.kids{
+	background-image: url(../img/offer-kids.png);
+}
+.accesories{
+	background-image: url(../img/offer-accesories.png);	
+	height: 180px;
+	width: 1140px;
+}
+/* ============================= products ========================= */
+
+.products-header{
+	text-align: center;
+}
+.products-title{
+	padding-bottom: 8px;
+	font-size: 30px;
+	line-height: 36px;
+	color: #222222;
+}
+.products-subtitle{
+	font-size: 14px;
+	line-height: 17px;
+	color: #9F9F9F;
+	margin-bottom: 48px;
+}
+.product-card-items{
+	display: block;
+  width: 360px;
+  margin: 0 0 30px 0;
+  position: relative;
+  background: #F8F8F8;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.product-card-items:hover .product-card-button {
+	display: flex
+}
+.product-card-items:hover .product-card-button:hover {
+  background-color: #ccc;
+  color: #000;
+  border: 1px solid #000;
+}
+.product-card-items:hover .product-card-button:active {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.product-card-items:hover .product-card-button:active svg {
+  fill: #fff;
+}
+.product-card-items:hover .product-card-image-wrp:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(58, 56, 56, 0.86);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.product-card-image-wrp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #F7E4E2;
+  box-sizing: border-box;
+  /* для затемнения через псевдоэлемент необходимо задать родительскому блоку position: relative; */
+  position: relative;
+}
+.product-card-image {
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.product-card-button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  background: transparent;
+  text-align: center;
+	font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 30%;
+  left: calc(50% - 80px);
+}
+.product-card-button svg {
+  fill: #fff;
+  margin: 0 11px 0 0;
+}
+.product-card-button:hover svg {
+  fill: #000000;
+}
+.product-card-button:hover {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+}
+
+ .products-cards{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap:30px;
+	list-style: none;
+}
+.product-card-image:nth-child(1){
+	background-color: #F7E4E2;
+}
+
+.product-card-title{
+	padding: 24px 0 0 18px;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 16px;
+	color: #000000;
+}
+.product-card-txt{
+	display: block;
+	padding: 12px 18px 0 ;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 17px;
+	color: #5D5D5D;
+}
+.product-card-price{
+	padding: 12px 0 20px 18px;
+	font-size: 16px;
+	line-height: 19px;
+	color: #F16D7F;
+}
+.products-button{
+	margin: 48px auto 60px;
+	padding: 15px 0 15px;
+	text-align: center;
+	width: 212px;
+	border: 1px solid #ff6a6a;
+	font-size: 16px;
+	color: #F26376;
+}
+.products-button:hover{
+	background-color: rgb(241, 109, 127, 0.2);
+}
