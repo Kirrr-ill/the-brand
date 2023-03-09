@@ -374,8 +374,9 @@ span{
 	.products-button{
 		margin: 32px auto 0;
 	}
-	@media (max-width: 768px){
-				.the-brand{
+}
+@media (max-width: 768px){
+	.the-brand{
 			margin: 138px 33px 137px 0;
 		}
-}
+	}
