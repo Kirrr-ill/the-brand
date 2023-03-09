@@ -352,7 +352,7 @@ span{
 		background-position: 0;
 	}
 	.the-brand{
-		margin: 138px 33px 137px 0;
+		margin: 138px 85px 137px 0;
 	}
 	.the-brand-title{
 		font-size: 44px;
@@ -374,4 +374,8 @@ span{
 	.products-button{
 		margin: 32px auto 0;
 	}
+	@media (max-width: 768px){
+				.the-brand{
+			margin: 138px 33px 137px 0;
+		}
 }
