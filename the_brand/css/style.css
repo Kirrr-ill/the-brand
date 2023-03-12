@@ -24,9 +24,7 @@ span{
 
 
 /* ========================== home ========================== */
-.home-page-wrp{
-	max-height:764px;
-}
+
 .home-page{
 	margin: 0 0 65px 0;
 	width: 100%;
@@ -153,21 +151,21 @@ span{
 	background-blend-mode: darken;
 	background-repeat: no-repeat;
 	background-position: center;
-}
-.offer-content-card-item:nth-child(1){
 	background-image: url(../img/offer-whomen.png);
 }
-.offer-content-card-item:nth-child(2){
+.men{
 	background-image: url(../img/offer-men.png);
 }
-.offer-content-card-item:nth-child(3){
+.kids{
 	background-image: url(../img/offer-kids.png);
 }
-.offer-content-card-item:nth-child(4){
-	background-image: url(../img/offer-accesories.png);
-	height: 180px;
+.accesories{
 	grid-column-start: 1;
 	grid-column-end: 4;
+}
+.accesories-img{	
+	height: 180px;
+	background-image: url(../img/offer-accesories.png);
 }
 .offer-content-card-item:hover{
 	background-blend-mode: overlay;
@@ -286,7 +284,7 @@ span{
 	border: 2px solid #000;
 	color: #000;
 }
-.product-card-image:nth-child(1){
+.product-card-image-wrp:nth-child(2){
 	background-color: #F7E4E2;
 }
 .product-card-title{
@@ -381,5 +379,73 @@ span{
 @media (max-width: 768px){
 	.the-brand{
 			margin: 138px 33px 137px 0;
+		}
+	}
+	@media (max-width:655px ){
+		.home-page-wrp{
+			background-position: -90px;}
+	}
+	@media(max-width: 567px){
+		.home-page-wrp{
+			height: 375px;
+			background: none;
+		}
+		
+		.the-brand{
+			margin: 0 auto;
+		}
+		.the-brand-title{
+			font-size: 38px;
+			line-height: 45px;
+		}
+		.the-brand-subtitle{
+			font-size: 20px;
+			line-height: 24px;
+		}
+		.the-brand::before{
+			width: 12px;
+			height: 61px;
+			top: 4px;
+			left: -23px;
+		}
+		.offer-wrp{
+			margin: 0 0 64px 0;
+		}
+		.offer-content-cards{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.offer-content-card-item{
+			min-width: 300px;
+		}
+	}
+	@media(max-width: 440px){
+		.header-wrp{
+			padding: 0 15px 0 15px;
+		}
+		.header-menu{
+			gap: 0;
+			align-items: flex-end ;
+		}
+		.menu-hamb{
+			margin: 0 -25px 0 0;
+		}
+		.menu-cart{
+			display: none;
+		}
+		.menu-user{
+			display: none;
+		}
+	}
+	@media(max-width: 375px){
+		.product-card-items{
+			display: block;
+			max-width: 300px;
+		}
+		.product-card-image {
+			max-width: 300px;
+			margin: 0 auto;
+			box-sizing: border-box;
 		}
 	}
