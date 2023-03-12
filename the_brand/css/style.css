@@ -151,12 +151,14 @@ span{
 	background-blend-mode: darken;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+.women-img{	
 	background-image: url(../img/offer-whomen.png);
 }
-.men{
+.men-img{
 	background-image: url(../img/offer-men.png);
 }
-.kids{
+.kids-img{
 	background-image: url(../img/offer-kids.png);
 }
 .accessories{
