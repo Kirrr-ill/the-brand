@@ -159,13 +159,13 @@ span{
 .kids{
 	background-image: url(../img/offer-kids.png);
 }
-.accesories{
+.accessories{
 	grid-column-start: 1;
 	grid-column-end: 4;
 }
-.accesories-img{	
+.accessories-img{	
 	height: 180px;
-	background-image: url(../img/offer-accesories.png);
+	background-image: url(../img/offer-accessories.png);
 }
 .offer-content-card-item:hover{
 	background-blend-mode: overlay;
