@@ -21,7 +21,9 @@ a{
 span{
 	color: #F16D7F;
 }
-
+li{
+	list-style: none;
+}
 
 /* ========================== home ========================== */
 
@@ -62,7 +64,6 @@ span{
 }
 .header-menu{
 	display: flex;
-	list-style: none;
 	gap: 25px;
 	align-items: center;	
 }
@@ -75,7 +76,6 @@ span{
 }
 .header-menu-list a{
 	fill: #fff;
-	list-style: none;
 }
 .header-menu-list a:hover{
 	fill: #F16D7F;
@@ -133,7 +133,6 @@ span{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	justify-content: left;
-	list-style: none;
 	gap: 30px;
 	color: #fff;
 }
@@ -142,7 +141,6 @@ span{
 	justify-content: center;
 	align-items: center;
 	height: 260px; 
-	font-weight: 400;
 	font-size: 16px;
 	text-align: center;
 	line-height: 19px;
@@ -152,27 +150,25 @@ span{
 	background-repeat: no-repeat;
 	background-position: center;
 }
-.women-img{	
+.women{	
 	background-image: url(../img/offer-whomen.png);
 }
-.men-img{
+.men{
 	background-image: url(../img/offer-men.png);
 }
-.kids-img{
+.kids{
 	background-image: url(../img/offer-kids.png);
 }
 .accessories{
 	grid-column-start: 1;
 	grid-column-end: 4;
-}
-.accessories-img{	
 	height: 180px;
 	background-image: url(../img/offer-accessories.png);
 }
 .offer-content-card-item:hover{
 	background-blend-mode: overlay;
 }
-.offer-content-card-item h3{
+.offer-content-card-item h4{
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 29px;
@@ -206,7 +202,6 @@ span{
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 30px;
-	list-style: none;
 }
 .product-card-items{
 	display: block;
@@ -266,7 +261,6 @@ span{
 	border: 1px solid #FFFFFF;
 	background: transparent;
 	text-align: center;
-	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
 	color: #FFFFFF;
@@ -326,6 +320,173 @@ span{
 }
 /* ============================= end products ========================= */
 
+/* =========================== futured ====================== */
+.future-wrp{
+	width: 100%;
+	min-height: 341px;
+	background-color: #222224;
+}
+.futures{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	color:#FBFBFB
+}
+.futured-items{
+	margin: 104px 0 0 0;
+	max-width: 360px;
+}
+.futured-items svg{
+	margin: 0 0 25px 0;
+	fill:#F16D7F;
+}
+.futured-items-title{
+	margin: 0 0 16px 0;
+	font-size: 20px;
+	line-height: 24px;
+	color: #FBFBFB;
+}
+.futured-items-txt{
+	padding: 0 25px 0 25px;
+	max-width: 360px;
+	font-weight: 300;
+	font-size: 13.972px;
+	line-height: 17px;
+}
+/* ============================= end futured ======================= */
+
+/* =================================== subscribe ==================== */
+.subscribe-wrp{
+	min-height: 448px;
+	width: 100%;
+	background-image: url(../img/subscribe-bgr.png);
+	background-color:rgba(244, 244, 244, 0.7);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+	background-blend-mode:lighten;
+
+}
+.user-subscribe{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.user-expirience{
+	margin: 97px 0 0 0;
+	max-width: 360px;
+	text-align: center;
+	font-style: italic;
+	font-size: 20px;
+	line-height: 24px;
+	color: #222224;
+}
+.user-expirience img{
+	display: block;
+	width: 98px;
+	height: 98px;
+	margin: 0 auto 30px auto;
+}
+.subscribe{
+	max-width: 356px;
+	margin: 150px 0 0 0;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	color: #222224;
+}
+.subscribe-header{
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 40px;
+}
+
+form {
+	margin: 32px 0 0 0;
+	display: flex;
+	justify-content: space-between;
+	min-height: 49px;
+	max-width: 356px;
+}
+
+input[type="email"] {
+	max-width: 256px;
+	width: 100%;
+	padding: 7px 10px 6px 23px;
+	box-sizing: border-box;
+	background-color: #E1E1E1;
+	border: none;
+	border-radius: 20px 0 0 20px;
+}
+input[type="email"]::placeholder {
+	color: #8B8B8C;
+}
+
+button {
+	display: block;
+	max-width: 100px;
+	width: 100%;
+	padding: 7px 20px 6px 21px;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 0 20px 20px 0;
+	background-color: #F16D7F;
+	color: #fff;
+}
+button:hover {
+	background-color: #fff;
+	color: #F16D7F;
+	cursor: pointer;
+}
+button:active {
+	background-color: #F16D7F;
+	color: #fff;
+}
+/* ===================================== end subscribe ================== */
+
+/* ===================================== footer ========================= */
+.footer-wrp{
+	width: 100%;
+	height: 79px;
+	background-color: #222224;
+	color: #F8F8F8;
+}
+.footer{
+	padding: 24px 0 23px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.social{
+	display: flex;
+	justify-content: space-between;
+	gap: 7px;
+	align-items: center;
+}
+.social-icons{
+	display: block;
+	width: 32px;
+	height: 32px;
+	background-color: #ffffff;
+}
+.social-icons svg{
+	width: 22px;
+	height:22px;
+	padding: calc(50% - 11px);
+}
+.social-icons:hover svg{
+	background-color: #F16D7F;
+	fill: #ffffff;
+}
+.social-icons:active svg{
+	background-color: #f35252;
+	fill: #ffffff;
+}
 /* ===================================== @media ============================ */
 
 @media (max-width: 1182px){
@@ -345,7 +506,14 @@ span{
 		margin: 281px 33px 381px 0;
 	}
 }
-
+@media (max-width: 1097px){
+	.fetures{
+		justify-content: center;
+	}
+	.futured-items{
+		margin: 48px 0 0 0;
+	}
+}
 @media (max-width: 860px){
 	.home-page-wrp{
 		height: 367px;
