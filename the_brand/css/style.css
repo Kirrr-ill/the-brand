@@ -38,7 +38,7 @@ li{
 	background-repeat: no-repeat;
 	background-position: -230px;
 	background-size: contain;
-	height: 764px;
+	min-height: 764px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
@@ -79,6 +79,9 @@ li{
 }
 .header-menu-list a:hover{
 	fill: #F16D7F;
+}
+.header-menu-list a:active{
+	opacity: 0.7;
 }
 .menu-cart{
 	position: relative;
@@ -150,7 +153,7 @@ li{
 	background-repeat: no-repeat;
 	background-position: center;
 }
-.women{	
+.women{
 	background-image: url(../img/offer-whomen.png);
 }
 .men{
@@ -325,6 +328,7 @@ li{
 	width: 100%;
 	min-height: 341px;
 	background-color: #222224;
+	padding: 0 0 64px 0;
 }
 .futures{
 	display: flex;
@@ -371,6 +375,7 @@ li{
 
 }
 .user-subscribe{
+	padding: 0 8px 0 8px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -405,7 +410,6 @@ li{
 	font-size: 24px;
 	line-height: 40px;
 }
-
 form {
 	margin: 32px 0 0 0;
 	display: flex;
@@ -413,7 +417,6 @@ form {
 	min-height: 49px;
 	max-width: 356px;
 }
-
 input[type="email"] {
 	max-width: 256px;
 	width: 100%;
@@ -426,8 +429,7 @@ input[type="email"] {
 input[type="email"]::placeholder {
 	color: #8B8B8C;
 }
-
-button {
+.subscribe-button {
 	display: block;
 	max-width: 100px;
 	width: 100%;
@@ -438,12 +440,12 @@ button {
 	background-color: #F16D7F;
 	color: #fff;
 }
-button:hover {
+.subscribe-button:hover {
 	background-color: #fff;
 	color: #F16D7F;
 	cursor: pointer;
 }
-button:active {
+.subscribe-button:active {
 	background-color: #F16D7F;
 	color: #fff;
 }
@@ -452,7 +454,7 @@ button:active {
 /* ===================================== footer ========================= */
 .footer-wrp{
 	width: 100%;
-	height: 79px;
+	min-height: 79px;
 	background-color: #222224;
 	color: #F8F8F8;
 }
@@ -493,6 +495,9 @@ button:active {
 	.header-wrp{
 		padding: 0 32px 0 32px;
 	}
+	.footer{
+		padding: 24px 32px 23px 32px;
+	}
 }
 
 @media (max-width: 1155px){
@@ -507,16 +512,17 @@ button:active {
 	}
 }
 @media (max-width: 1097px){
-	.fetures{
+	.futures{
 		justify-content: center;
 	}
 	.futured-items{
 		margin: 48px 0 0 0;
 	}
+
 }
 @media (max-width: 860px){
 	.home-page-wrp{
-		height: 367px;
+		min-height: 367px;
 		background-position: 0;
 	}
 	.header-menu-list:last-child{
@@ -546,21 +552,33 @@ button:active {
 		margin: 32px auto 0;
 	}
 }
+
 @media (max-width: 768px){
 	.the-brand{
 			margin: 138px 33px 137px 0;
 		}
+		.user-subscribe{
+			padding: 0 0 140px;
+			justify-content: center;
+		}
+		.user-expirience{
+			margin: 64px 0 0 0;
+		}
+		.subscribe{
+			margin: 48px 0 0 0;
+		}
 	}
-	@media (max-width:655px ){
+
+@media (max-width:655px ){
 		.home-page-wrp{
 			background-position: -90px;}
 	}
-	@media(max-width: 567px){
+
+@media(max-width: 567px){
 		.home-page-wrp{
 			height: 375px;
 			background: none;
 		}
-		
 		.the-brand{
 			margin: 0 auto;
 		}
@@ -589,8 +607,18 @@ button:active {
 		.offer-content-card-item{
 			min-width: 300px;
 		}
-	}
-	@media(max-width: 440px){
+		.footer{
+			padding: 0;
+			flex-direction: column-reverse;
+		}
+		.social-icons{
+			margin: 43px 0 40px 0;
+		}
+		.copyright{
+			margin: 0 0 9px 0;
+		}
+}
+@media(max-width: 440px){
 		.header-wrp{
 			padding: 0 15px 0 15px;
 		}
@@ -607,8 +635,9 @@ button:active {
 		.menu-user{
 			display: none;
 		}
+		
 	}
-	@media(max-width: 375px){
+@media(max-width: 375px){
 		.product-card-items{
 			display: block;
 			max-width: 300px;
