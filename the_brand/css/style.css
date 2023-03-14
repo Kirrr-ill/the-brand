@@ -66,27 +66,33 @@ opacity: 0.7;
 .logo:active{
 	opacity: 0.2;
 }
-.search svg{
+.search-input svg{
 	margin: 0 10px 0 41px;
 	fill: #fff;
 	cursor: pointer;
 }
-.search svg:hover{
+.search-input svg:hover{
 	fill: #F16D7F;
 }
-.search svg:active{
+.search-input svg:active{
 	fill: #F16D7F;
 	opacity: 0.5;
 }
-.search-field-input{
-	text-transform: capitalize;
+#search-field-input{
+	top: 75px;
+	max-width: 320px;
+	width: 100%;
+	position: absolute;
+	left: 0;	
 	font-size: 24px;
 	visibility: hidden;
 }
-input[type="checkbox"]:checked ~ .search-field-input{
+input[type="checkbox"]:checked ~ #search-field-input{
 	fill: #e2b0b7;
 	visibility: visible;
-	
+	background-color: #fff;
+	outline : none;
+	border-radius: 10px; 
 	}
 
 .header-menu{
