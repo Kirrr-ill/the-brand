@@ -307,7 +307,8 @@ input[type="text"], input[type="password"] {
 	border-radius: 10px;
 	}
 	.user-form-input:focus{
-		outline: none;
+		border: solid 1px #F16D7F;
+	outline: none;
 	}
 input[type="text"]::placeholder {
 	color: #8B8B8C;
