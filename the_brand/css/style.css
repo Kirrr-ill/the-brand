@@ -202,8 +202,7 @@ input[type="checkbox"]:checked ~ .hamburger>span::before{
 	position: absolute;
 	border-radius: 2px;
 }
-.hamburger:hover span::before,
-.hamburger:hover span::after{
+.hamburger:hover span::before, .hamburger:hover span::after{
 	background-color: inherit;
 }
 .hamburger span::before{	
@@ -297,8 +296,7 @@ fill: #e2b0b7;
 	text-transform: uppercase;
 	color: #F16D7F;
 }
-input[type="text"], 
-input[type="password"] {
+input[type="text"], input[type="password"] {
 	min-width: 256px;
 	width: 100%;
 	padding: 7px 10px 6px 23px;
@@ -706,6 +704,9 @@ input[type="email"]::placeholder {
 	background-color: #f35252;
 	fill: #ffffff;
 }
+/* ===================================== end footer ========================= */
+
+
 /* ===================================== @media ============================ */
 
 @media (max-width: 1182px){
