@@ -794,6 +794,8 @@ input[type="email"]::placeholder {
 		margin: 32px auto 0;
 		
 	}
+	.subscribe{
+		margin: 145px 0 0 0;}
 	.user-subscribe{
 		justify-content: center;
 			padding: 0 0 140px 0;}
