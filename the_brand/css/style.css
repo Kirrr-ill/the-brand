@@ -142,7 +142,7 @@ input[type="checkbox"]:checked ~ #search-field-input{
 	text-transform: uppercase;
 	color: #222222;
 	position: relative;
-	 margin: 0 96px 46px 0;
+	 margin: 0 102px 86px 0;
 }
 .the-brand-title{
 	font-weight: 900;
@@ -220,11 +220,10 @@ input[type="checkbox"]:checked ~ .open-menu{
 	visibility: visible;
 }
 .open-menu{
-	min-width: 232px;
+	width: 232px;
 	margin: 26px 0 0 0;
 	visibility: hidden;
 	right: 0;
-	padding: 0 0 32px 32px;
 	display: none;
 	text-transform: uppercase;
 	position: absolute;
@@ -234,21 +233,21 @@ input[type="checkbox"]:checked ~ .open-menu{
 }
 .open-menu-title span{
 	display: block;
-	margin: 32px 0 24px 0;
+	margin: 32px 0 24px 32px;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 17px;
 	color: #000000;
 }
 .open-menu-subtitle a{	
-	margin: 20px 0 12px 0;
+	margin: 20px 0 12px 32px;
 	color: #F16D7F;
 }
 .open-menu-items-list{
 	display: flex;
 	flex-direction: column;
 	gap:11px;
-	margin: 12px 0 20px 19px;
+	margin: 12px 0 20px 57px;
 }
 .open-menu-items-link {
 	color: #6F6E6E;
@@ -396,7 +395,7 @@ input[type="text"]::placeholder {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	margin: 0 auto 60px auto;
+	margin: 0 auto 95px auto;
 }
 .products-header{
 	text-align: center;
@@ -500,26 +499,29 @@ input[type="text"]::placeholder {
 .product-card-image-wrp:nth-child(2){
 	background-color: #F7E4E2;
 }
-.product-card-title{
+.product-card-info{
 	padding: 24px 0 0 18px;
+}
+.product-card-title{
+	/* padding: 24px 0 0 0; */
 	text-transform: uppercase;
 	font-size: 13px;
 	line-height: 16px;
 	color: #000000;
 }
 .product-card-txt{
+	margin:12.65px 0 18px 0;
 	display: block;
-	padding: 12px 18px 0 ;
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 17px;
 	color: #5D5D5D;
 }
 .product-card-price{
-	padding: 12px 0 20px 18px;
 	font-size: 16px;
 	line-height: 19px;
 	color: #F16D7F;
+	margin: 0 0 20px 0;
 }
 .products-button{
 	margin: 48px auto 0 auto;
@@ -546,7 +548,7 @@ opacity: 0.3;
 /* =========================== futured ====================== */
 .future-wrp{
 	width: 100%;
-	min-height: 341px;
+	max-height: 341px;
 	background-color: #222224;
 	padding: 0 0 64px 0;
 }
