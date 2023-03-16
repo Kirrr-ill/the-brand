@@ -792,7 +792,11 @@ input[type="email"]::placeholder {
 	}
 	.products-button{
 		margin: 32px auto 0;
+		
 	}
+	.user-subscribe{
+		justify-content: center;
+			padding: 0 0 140px 0;
 }
 
 @media (max-width: 768px){
@@ -800,8 +804,6 @@ input[type="email"]::placeholder {
 			margin: 0 16px 0 0;
 		}
 		.user-subscribe{
-			padding: 0 0 140px;
-			justify-content: center;
 		}
 		.user-expirience{
 			margin: 64px 0 0 0;
