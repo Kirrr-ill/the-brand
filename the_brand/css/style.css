@@ -795,16 +795,21 @@ input[type="email"]::placeholder {
 		
 	}
 	.subscribe{
-		margin: 145px 0 0 0;}
+		margin: 145px 0 0 0;
+	}
 	.user-subscribe{
 		justify-content: center;
-			padding: 0 0 140px 0;}
+		padding: 0 0 140px 0;
+		flex-direction: column;
+	}
 }
 
 @media (max-width: 768px){
 	.the-brand{
 			margin: 0 16px 0 0;
 		}
+		.futures{
+			flex-direction: column;}
 }
 
 @media (max-width:655px ){
