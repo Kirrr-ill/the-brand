@@ -550,7 +550,7 @@ opacity: 0.3;
 /* =========================== futured ====================== */
 .future-wrp{
 	width: 100%;
-	max-height: 341px;
+min-height: 341px;
 	background-color: #222224;
 	padding: 104px 0 104px 0;
 }
