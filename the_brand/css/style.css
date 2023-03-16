@@ -96,6 +96,7 @@ input[type="checkbox"]:checked ~ #search-field-input{
 	}
 
 .header-menu{
+	margin: 3px 4px 0 0;
 	display: flex;
 	gap: 25px;
 	align-items: center;
@@ -107,7 +108,7 @@ input[type="checkbox"]:checked ~ #search-field-input{
 	position: relative;
 }
 .header-menu-list:last-child{
-	padding-left: 17px ;
+	margin: 2px 3px 0 19px ;
 }
 .header-menu-list svg{
 	width: 32px;
@@ -221,8 +222,9 @@ input[type="checkbox"]:checked ~ .open-menu{
 }
 .open-menu{
 	width: 232px;
-	margin: 26px 0 0 0;
+	margin: 75px 0 0 0;
 	visibility: hidden;
+	top: 0;
 	right: 0;
 	display: none;
 	text-transform: uppercase;
@@ -304,11 +306,11 @@ input[type="text"], input[type="password"] {
 	background-color: #E1E1E1;
 	border: none;
 	border-radius: 10px;
-	}
+}
 	.user-form-input:focus{
 		border: solid 1px #F16D7F;
 	outline: none;
-	}
+}
 input[type="text"]::placeholder {
 	color: #8B8B8C;
 }
@@ -471,8 +473,8 @@ input[type="text"]::placeholder {
 	display: none;
 	justify-content: center;
 	align-items: center;
-	width: 160px;
-	padding: 10px;
+	width: 139px;
+	padding: 8px;
 	box-sizing: border-box;
 	border: 1px solid #FFFFFF;
 	background: transparent;
@@ -481,8 +483,8 @@ input[type="text"]::placeholder {
 	line-height: 19px;
 	color: #FFFFFF;
 	position: absolute;
-	top: 30%;
-	left: calc(50% - 80px);
+	top: 32%;
+	left: calc(50% - 74px);
 }
 .product-card-overlay svg {
 	fill: #fff;
@@ -503,14 +505,13 @@ input[type="text"]::placeholder {
 	padding: 24px 0 0 18px;
 }
 .product-card-title{
-	/* padding: 24px 0 0 0; */
 	text-transform: uppercase;
 	font-size: 13px;
 	line-height: 16px;
 	color: #000000;
 }
 .product-card-txt{
-	margin:12.65px 0 18px 0;
+	margin: 12.65px 0 18px 0;
 	display: block;
 	font-weight: 300;
 	font-size: 14px;
@@ -550,7 +551,7 @@ opacity: 0.3;
 	width: 100%;
 	max-height: 341px;
 	background-color: #222224;
-	padding: 0 0 64px 0;
+	padding: 104px 0 104px 0;
 }
 .futures{
 	display: flex;
@@ -562,15 +563,17 @@ opacity: 0.3;
 	color:#FBFBFB
 }
 .futured-items{
-	margin: 104px 0 0 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center	;
+	align-content: center;
 	max-width: 360px;
 }
 .futured-items svg{
-	margin: 0 0 25px 0;
 	fill:#F16D7F;
 }
 .futured-items-title{
-	margin: 0 0 16px 0;
+	margin: 19px 0 16px 0;
 	font-size: 20px;
 	line-height: 24px;
 	color: #FBFBFB;
@@ -620,7 +623,7 @@ opacity: 0.3;
 }
 .subscribe{
 	max-width: 360px;
-	margin: 150px 0 0 0;
+	margin: 120px 0 0 0;
 	text-transform: uppercase;
 	font-size: 18px;
 	line-height: 30px;
