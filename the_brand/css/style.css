@@ -796,20 +796,12 @@ input[type="email"]::placeholder {
 	}
 	.user-subscribe{
 		justify-content: center;
-			padding: 0 0 140px 0;
+			padding: 0 0 140px 0;}
 }
 
 @media (max-width: 768px){
 	.the-brand{
 			margin: 0 16px 0 0;
-		}
-		.user-subscribe{
-		}
-		.user-expirience{
-			margin: 64px 0 0 0;
-		}
-		.subscribe{
-			margin: 48px 0 0 0;
 		}
 }
 
