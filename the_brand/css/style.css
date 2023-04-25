@@ -436,6 +436,9 @@ input[type="checkbox"]:checked ~ .basket-box {
 }
 .qty-label {
   margin-right: 24px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 /* ============================= end home ========================== */

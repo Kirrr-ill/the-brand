@@ -13,7 +13,7 @@ prodData.forEach(({ name, image, price, txt }) => {
 						<div class="product-card-info">
 							<h5 class="product-card-title">${name}</h5>
 							<p class="product-card-txt">${txt}</p>
-							<p class="product-card-price">${price}</p>
+							<p class="product-card-price">$${price}</p>
 						</div>
 						<button class="product-card-overlay" type="button">
 							<svg width="26" height="24" viewBox="0 0 32 29" xmlns="http://www.w3.org/2000/svg">
