@@ -18,9 +18,9 @@ addItem.forEach((element) => {
 
 		const itemInCart = cartBox.querySelector(`[data-id="${cardInfo.id}"]`);
 		if (itemInCart) {
-			// const value = itemInCart.querySelector('.input-qty').value;
+			const value = itemInCart.querySelector('.input-qty').value;
 			// const quantity = Number(value);
-			// console.log(typeof quantity);
+			console.log(typeof value);
 		} else {
 			const cartEl = `
 			<div class="product" data-id="${cardInfo.id}">
