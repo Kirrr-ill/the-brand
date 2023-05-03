@@ -672,6 +672,7 @@ input[type="text"]::placeholder {
 }
 .product-img {
   width: 262px;
+  background-color: #f7e4e2;
 }
 .product-name {
   margin: 0 0 42px 0;
